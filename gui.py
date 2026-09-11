@@ -18,7 +18,7 @@ def generate_qr():
         back_color="white"
     )
 
-    img.save(entry.get())
+    img.save("qrcode.png")
 
     print("QR code generated successfully!")
 
