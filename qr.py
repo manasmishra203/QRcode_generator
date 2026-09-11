@@ -1,5 +1,4 @@
 import qrcode
-
 number = int(input("Enter the number of QR codes you want to generate: "))
 
 qr_color = input("Enter color of QR: ")
@@ -16,8 +15,8 @@ for i in range(number):
     )
     qr.add_data(website_link)
     qr.make()
+    
     #this saving image comes under pillow library
-
     img=qr.make_image(fill_color=qr_color,back_color=bg_color)
     img.save(input("enter the name of the file to save qrcode with extension: ")) #'qrcode.png'
 print("All QR codes generated successfully!")
